@@ -23,6 +23,10 @@ const connect = () => {
   conn.on("connect", () => {
     conn.write("Name: A73");
   });
+  
+  conn.on("connect", () => {
+    conn.write("Say: Say");
+  });
 
   return conn;
 };
