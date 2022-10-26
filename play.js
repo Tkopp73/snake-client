@@ -2,9 +2,9 @@ const connect = require('./client');
 const setupInput = require('./input');
 
 console.log("connecting ... ");
-connect();
+let conn = connect();
 
-setupInput();
+setupInput(conn);
 
 
 
